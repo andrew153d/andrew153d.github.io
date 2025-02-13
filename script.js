@@ -18,12 +18,10 @@ hamburger.addEventListener('click', function () {
     } 
 });
 
-  document.getElementById('download-btn').addEventListener('click', function () {
-    // Link to the resume file in your repository (raw content)
-    const resumeURL = 'https://github.com/andrew153d/Resume/blob/main/Resume.pdf';
-
+document.getElementById('download-btn').addEventListener('click', function () {
+    const resumeURL = 'https://raw.githubusercontent.com/andrew153d/andrew153d.github.io/main/Resume.pdf';
     const link = document.createElement('a');
-    link.href = resumeURL; // Directly link to the raw file hosted in your repository
-    link.download = 'resume.pdf'; // The name of the file when downloaded
-    link.click(); // Trigger the download
+    link.href = resumeURL;
+    link.download = 'resume.pdf';
+    link.click();
   });
