@@ -39,7 +39,7 @@ body .row {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     /*Add this*/
 }
 
@@ -176,6 +176,14 @@ img {
     white-space: nowrap;
 }
 
+button.scroll-btn
+{
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    z-index: 1;
+}
 
 .portfolio-description {
     flex: 1;

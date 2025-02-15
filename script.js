@@ -27,7 +27,12 @@ document.getElementById('download-btn').addEventListener('click', function () {
 });
 
 
-document.getElementById('scroll-btn').addEventListener('click', function () {
-    const gallery = document.querySelector('.portfolio-gallery');
-    gallery.scrollBy({ left: 350, behavior: 'smooth' });
-});
+document.getElementById('scroll-btn-right').onclick = function() {
+    const gallery = this.nextElementSibling;
+    gallery.scrollBy({ left: -300, behavior: 'smooth' });
+};
+
+document.getElementById('scroll-btn-left').onclick = function() {
+    const gallery = this.previousElementSibling;
+    gallery.scrollBy({ left: 300, behavior: 'smooth' });
+};
