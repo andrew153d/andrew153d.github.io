@@ -27,18 +27,7 @@ document.getElementById('download-btn').addEventListener('click', function () {
 });
 
 
-function nextImage(button) {
-    const galleryContainer = button.parentElement;
-    const images = galleryContainer.querySelectorAll('img');
-    let currentIndex = 0;
-
-    images.forEach((img, index) => {
-        if (!img.classList.contains('hidden')) {
-            img.classList.add('hidden');
-            currentIndex = index;
-        }
-    });
-
-    const nextIndex = (currentIndex + 1) % images.length;
-    images[nextIndex].classList.remove('hidden');
-}
+document.getElementById('scroll-btn').addEventListener('click', function () {
+    const gallery = document.querySelector('.portfolio-gallery');
+    gallery.scrollBy({ left: 350, behavior: 'smooth' });
+});
