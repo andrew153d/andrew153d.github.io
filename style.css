@@ -139,14 +139,20 @@ img{
 }
 
 .portfolio-block {
-    padding: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    
     margin: 0%;
     /* height: 600px; */
-    min-width: 600px;
+    /* min-width: 600px; */
 }
 
 .portfolio-gallery
 {
+    flex: 0 0 350px; /* Fixed width of 350px */
+    max-width: 350px; /* Ensures it does not grow */
     overflow: auto;
 
 }
@@ -168,7 +174,10 @@ img{
 
 .portfolio-description
 {
-
+    flex: 1; /* Takes the remaining width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-title
