@@ -26,13 +26,18 @@ document.getElementById('download-btn').addEventListener('click', function () {
     link.click();
 });
 
+document.querySelectorAll('.scroll-btn-right').forEach(button => {
+    console.log('Right scroll button clicked:', button);
+    button.onclick = function() {
+        const sibling = this.nextElementSibling;
+        sibling.scrollBy({ left: -300, behavior: 'smooth' });
+    };
+});
 
-document.getElementById('scroll-btn-right').onclick = function() {
-    const gallery = this.nextElementSibling;
-    gallery.scrollBy({ left: -300, behavior: 'smooth' });
-};
-
-document.getElementById('scroll-btn-left').onclick = function() {
-    const gallery = this.previousElementSibling;
-    gallery.scrollBy({ left: 300, behavior: 'smooth' });
-};
+document.querySelectorAll('.scroll-btn-left').forEach(button => {
+    console.log('Right scroll button clicked:', button);
+    button.onclick = function() {
+        const sibling = this.previousElementSibling;
+        sibling.scrollBy({ left: 300, behavior: 'smooth' });
+    };
+});
