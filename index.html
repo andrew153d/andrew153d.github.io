@@ -1,7 +1,7 @@
 <!--index.html-->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-snap-parent">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
 
-<body>
+<body class="container">
     <!-- Navbar header section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo" style="display: flex; align-items: center;">
-                <img src="Logo.png" alt="Logo" class="logo-image" style="height: 60px; margin-right: 10px;">
-                <!-- <h2 class="logo-heading">Andrew Grow</h2>  -->
+    <header class="header row container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo" class="logo-image">
             </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars hamburger-icon"></i>
@@ -54,29 +53,33 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="intro">
-            <div class="headings">
-                <h3 class="greet-heading">Hello, I'm</h3>
-                <h1 class="my-heading">Andrew Grow</h1>
-                <!-- <h4 class="sub-heading"> 
-                    An embedded software engineer with 3 years of experience. 
-                </h4>  -->
-            </div>
-            <div class="intro-buttons"> 
-                <button class="btn common-btn">Contact Me</button> 
-                <button id="download-btn" class="btn ghost-btn">Get Resume</button>
-            </div> 
         </div>
-        <!-- <div class="headshot">
-            <img src="Headshot.jpeg" alt="Headshot" class="headshot-image" style="width: 150px; height: 150px; border-radius: 50%;">
-        </div> -->
+    </header>
+    <header class="spacer">
+    </header>
+    <section id="home" class="hero row vh-90">
+        <div class="intro row col-md-6 d-flex align-items-center justify-content-center text-center">
+            <div class="col-12">
+                <div class="headings">
+                    <div class="greet-heading">Hello, I'm</div>
+                    <div class="my-heading">Andrew Grow</div>
+                </div>
+                <div class="intro-buttons">
+                    <button class="col-sm-12 btn common-btn">Contact Me</button>
+                    <button id="download-btn" class="col-sm-12 btn common-btn">Resume</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img src="AxisDriver.png" style="max-width: 100%; height: auto;">
+        </div>
     </section>
-    <section id="about" class="about">
-        <div class="about-text">
+    <section class="about row vh-90">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img src="WCV2/WC.png">
+        </div>
+        <div class="about-text col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div>
             <h1 class="my-heading">About Me</h1>
             <p class="lead-para">
                 GeeksforGeeks is a leading platform
@@ -95,57 +98,163 @@
                 and courses, covering various domains
                 of computer science.
             </p>
-            <p>
-                Our exceptional mentors hailing from top
-                colleges & organizations have the
-                ability to guide you on a journey from
-                the humble beginnings of coding to
-                the pinnacle of expertise. Under their
-                guidance watch your skills flourish
-                as we lay the foundation and help you
-                conquer the world of coding.
-            </p>
         </div>
-        <div class="about-image">
-            <img src="./Images/heroImg2.avif" alt="About Image">
         </div>
+
     </section>
     <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-heading">
-            <h1 class="my-heading text-center">Featured Portfolio</h1>
+    <section class="portfolio">
+        <div class="portfolio-heading row d-flex align-items-center justify-content-center text-center">
+            <h1 class="my-heading col-12">Featured Portfolio</h1>
         </div>
         <div class="container portfolio-content">
+            <!-- Axis Driver -->
             <div class="row portfolio-block">
-                <div class="col-md-4">
-                    Image
+                <div class="portfolio-gallery col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="WCV1/WC4.png" width="100%" height="100%">
+                    <img src="WCV1/WC4.png" width="100%" height="100%">
+                    <img src="WCV1/WC4.png" width="100%" height="100%">
                 </div>
-                <div class="col-md-8">
-                    Axis Driver
+                <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center align-items- row">
+                    <div>
+                    <div class="portfolio-title col-12">
+                        Remote Welder Controller
+                    </div>
+                    <div class="portfolio-text col-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est bore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
                 </div>
             </div>
+            <!-- Ricky Relay -->
             <div class="row portfolio-block">
-                <div class="col-md-8">
-                    Another project
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="col-md-4">
-                    image
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
                 </div>
             </div>
+            <!-- Cone Generator -->
             <div class="row portfolio-block">
-                <div class="col-md-4">
-                    image
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    Another project
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </div>
             </div>
+            <!-- Sail Auto Pilot -->
             <div class="row portfolio-block">
-                <div class="col-md-8">
-                    Another project
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="col-md-4">
-                    image
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <!-- Part camera -->
+            <div class="row portfolio-block">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            <!-- 3 phase gimbal motor controller -->
+            <div class="row portfolio-block">
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <!-- CyberDeck -->
+            <div class="row portfolio-block">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            <!-- Reliable-UDP -->
+            <div class="row portfolio-block">
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <!-- Mini Click Hub -->
+            <div class="row portfolio-block">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                        <img src="PlaceHolder.png" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-md-8  d-flex justify-content-center align-items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </div>
             </div>
         </div>
@@ -153,7 +262,7 @@
     </section>
 
     <!-- About Section -->
-    
+
 
     <!-- Services Section -->
     <!-- <section class="services" id="services">
