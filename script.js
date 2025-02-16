@@ -41,3 +41,7 @@ document.querySelectorAll('.scroll-btn-left').forEach(button => {
         sibling.scrollBy({ left: 300, behavior: 'smooth' });
     };
 });
+
+function sendEmail() {
+    window.location.href = "mailto:andrewwisnergrow@gmail.com?subject=Let's Chat&body=Hi Andrew,";
+}

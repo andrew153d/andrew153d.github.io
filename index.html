@@ -15,10 +15,10 @@
 
 <body class="container">
     <!-- Navbar header section -->
-    <header class="header row container">
+    <!-- <header class="header row container">
         <div class="navbar">
             <div class="logo">
-                <img src="Logo.png" alt="Logo" class="logo-image">
+                <img src="media/Logo.png" alt="Logo" class="logo-image">
             </div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars hamburger-icon"></i>
@@ -54,9 +54,9 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header> -->
     <header class="spacer">
-    </header>
+    </header> 
     <section id="home" class="hero row vh-90">
         <div class="intro row col-md-6 d-flex align-items-center justify-content-center text-center">
             <div class="col-12">
@@ -65,38 +65,30 @@
                     <div class="my-heading">Andrew Grow</div>
                 </div>
                 <div class="intro-buttons">
-                    <button class="col-sm-12 btn common-btn">Contact Me</button>
+                    <button class="col-sm-12 btn common-btn" onclick="sendEmail()">Contact Me</button>
                     <button id="download-btn" class="col-sm-12 btn common-btn">Resume</button>
                 </div>
             </div>
         </div>
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-            <img src="AxisDriver.png" style="max-width: 100%; height: auto;">
+            <img src="media/AD/AxisDriver.png" style="max-width: 100%; height: auto;">
         </div>
     </section>
     <section class="about row vh-90">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-            <img src="WCV2/WC.png">
+            <img src="media/WCV2/WC.png">
         </div>
         <div class="about-text col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
             <div>
                 <h1 class="my-heading">About Me</h1>
                 <p class="lead-para">
-                    GeeksforGeeks is a leading platform
-                    that provides computer science
-                    resources and coding challenges for
-                    programmers and technology
-                    enthusiasts, along with interview
-                    and exam preparations for upcoming
-                    aspirants. With a strong emphasis on
-                    enhancing coding skills and knowledge,
-                    it has become a trusted destination
-                    for over 12 million plus registered
-                    users worldwide. The platform offers
-                    a vast collection of tutorials, practice
-                    problems, interview tutorials, articles,
-                    and courses, covering various domains
-                    of computer science.
+                    Im a dedicated embedded software engineer with a strong foundation in diagnosing, 
+                    developing, and testing embedded systems for safety-critical defense applications.
+                    Adept at developing high-complexity solutions with strong problem-solving skills and 
+                    a drive to develop cutting edge technology. I have a passion for creating innovative solutions to
+                    everyday problems. With a background in embedded systems and a keen interest in developing high-performance 
+                    software, I strive to push the boundaries of technology. My experience spans across various projects, 
+                    from remote welder controllers to machine learning classifiers, showcasing my versatility and dedication to the field.                
                 </p>
             </div>
         </div>
@@ -113,38 +105,21 @@
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV1/WC4.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV1/WC1.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV1/WC2.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV1/WC3.jpg" width="100%" height="100%"></span>
                     </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
+                            Remote Welder Controller V1.0
                         </div>
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
+                            The remote welder controller was made to affordably upgrade an older welder to be controlled from a distance. During the welding process, constant adjustment of the welding current is needed to adjust the heat of the weld. Brand new machines have this feature but can cost thousands of dollars more than older machines for few additional features. The motor portion is magneticallly attached to the face of the welder and controls the knob via a belt and pulley. The motor is powered from the welder via a 12V plug and powers the motor and motor driver inside of the water resistant case. The controller and motor driver communicate over ESPNow, matching the rotation of the controller knob to the motor.
+                         </div>
                     </div>
                 </div>
             </div>
@@ -153,37 +128,22 @@
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
-                        </div>
+                            <a href="https://github.com/andrew153d/RemoteWelderController" target="_blank">Remote Welder Controller V2.0</a>
+                        </div> 
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            Version 2 of the remote welder controller builds upon the success of the first revision, modifying the design to be more end user friendly, rugged, and manufacturable. Both devices are powered by on-board batteris with the cell balancing and USB-C charging. They are both water resistant and prototype boards are comforrmally coated to avoid water damage. Both devices also support OTA software update functionality, and wifi tethering so the user can control the device from their phone. This model is meant to provide much more fine control of the welder. Sensorless homing, position feedback, and a more refined user experience all improve this design over the previous. For more in-depth details on usage, features, and design, visit the github page. While this device has not been fully built in its final form, all of the physical design and most of the software are complete and functional. 
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/FullRender.PNG" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/Transmitter/TransmitterTop.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/Transmitter/TransmitterTopViewDiagram.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/Receiver/PortsWide.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/Transmitter/TransmitterBottomView.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/WCV2/Receiver/ReceiverSeals.png" width="100%" height="100%"></span>
                     </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
@@ -193,37 +153,20 @@
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/RR/RR1.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/RR/RR2.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/RR/RR4.jpg" width="100%" height="100%"></span>
+                        
                     </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
-                        </div>
+                            <a href="https://github.com/andrew153d/RickyRelay" target="_blank">Ricky Relay</a>
+                        </div> 
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            Ricky Relay is a simple dektop electronics tool made to provide two relays with NC and NO positions for various test fixtures. It has been used for hundreds of hours of testing power sequences and firmware upgrade on the device under test. The python gui allows for user control, and the simple serial interface makes test automation easy with python scripts.
                         </div>
                     </div>
                 </div>
@@ -233,38 +176,19 @@
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
+                            <a href="https://github.com/andrew153d/ConeGenerator" target="_blank">Cone Generator</a>
                         </div>
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            When metal rooves are being installed, the stand pipes that need to protrude through the roof need to be covered and sealed. There is a single German company that used to sell templates for this shape. Since they have gone out of business the most common way to make this chape is to simply guess and check. To solve this problem and make a more accurate shape, I wrote a program that can take any shape of cone intersected by any roof angle and will generate a template to use to cut out the sheet metal. The template is currently being used consistely by a roofing contractor in my area. 
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
-                    </div>
+                        <span class="image-container"><img src="media//CG/CG1.PNG" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/CG/CG2.png" width="100%" height="100%"></span>
+                        </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
             </div>
@@ -273,37 +197,19 @@
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/AT/AT1.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/AT/AT2.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/AT/AT3.jpg" width="100%" height="100%"></span>
                     </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
-                        </div>
+                            <a href="https://github.com/andrew153d/AutoTiller" target="_blank">AutoTiller</a>
+                        </div> 
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            The AutoTiller was made to automatically control the tiller on a 1970 AMF Sunfish. The device uses a compass, gyroscope, and accelerometer to determine its heading and control the tiller based on desired heading and current heading. The device gets mounted on the tiller with a spool of kevlar line attaching it to each side of the sailboat. The function button allows live adjustment of the PID loop, and allows accurate control of the sailboat. 
                         </div>
                     </div>
                 </div>
@@ -313,38 +219,20 @@
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
+                            <a href="https://github.com/andrew153d/knn_hardware_classifier" target="_blank">KNN Hardware Classifier</a>
                         </div>
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            The KNN hardware classifier uses a webcam to take images of a piece of hardware and classify it as a specific type of hardware. The classifier is trained on a dataset of 1000 images of 5 different types of hardware. It avoids the use of common frameworks like OpenCV because its final form would be tested on a bare-metal microcontroller. It achieves ~95% successful classification rate by using a custom implementation of the KNN algorithm optimized for the microcontroller environment. This project demonstrates the feasibility of running machine learning algorithms on constrained hardware.
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
-                    </div>
+                        <span class="image-container"><img src="media/KNN/edge_detected.png" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/KNN/subtracted_image.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/KNN/screenshot.png" width="100%" height="100%"></span>
+                        </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
             </div>
@@ -353,37 +241,18 @@
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/GC/20250216_130254.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/GC/Bare_Pull.jpg" width="100%" height="100%"></span>
                     </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
-                        </div>
+                            <a href="https://github.com/andrew153d/Smart_Pull" target="_blank">Smart Pull</a>
+                        </div> 
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            The Smart Pull is a WiFi-connected device designed to control other devices on the network using MQTT. It operates like a chain pull switch, but smarter. Using Home Assistant, the Smart Pull can control lights, with a quick pull turning the light on and off, while slowly pulling make the smart pull operate like a slider, dimming the light.
                         </div>
                     </div>
                 </div>
@@ -393,121 +262,45 @@
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
+                            <a href="https://github.com/andrew153d/CyberDeck" target="_blank">Cyber Deck</a>
                         </div>
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            The CyberDeck project houses a Raspberry Pi 5, 5G modem, and BladeRF xA4 in a small pelican case. The platform allows for full control of the rf spectrum and remote connectivity to the cloud. The device can be powered with a usbc battery bank, allowing for complete portability. The gateway uses several open source SDR projects as well as utilities I have written. Its main use right now is as a radio logger. The device records IQ samples, demodulates them at several frequencies, and logs any transmissions present.  
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
                     <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
-                    </div>
+                        <span class="image-container"><img src="media/CD/20250216_130710.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/CD/20250216_130717.jpg" width="100%" height="100%"></span>
+                        </div>
                     <button class="scroll-btn-left scroll-btn btn common-btn">></button>
                 </div>
             </div>
             <!-- Reliable-UDP -->
             <div class="row portfolio-block d-flex justify-content-center align-items-center">
                 <div class="col-sm-12 col-md-4 d-flex align-items-center">
-                    <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
+                    <!-- <button class="scroll-btn-right scroll-btn btn common-btn"><</button> -->
                     <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
+                        <span class="image-container"><img src="media/RUDP/image.png" width="100%" height="100%"></span>
                     </div>
-                    <button class="scroll-btn-left scroll-btn btn common-btn">></button>
+                    <!-- <button class="scroll-btn-left scroll-btn btn common-btn">></button> -->
                 </div>
                 <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
                     <div>
                         <div class="portfolio-title col-12">
-                            Remote Welder Controller
+                            <a href="https://github.com/andrew153d/Reliable-UDP" target="_blank">Reliable UDP</a>
                         </div>
                         <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            This project implements a reliable udp protocol in bot C and C#, allowing it to transfer
+                            data beween Windows machines and devices running C. The C application is single threaded to
+                            allow for porting to bare metal microcontrollers. The protocol features packer re-ordering, tamper detection, and multiple packet retransmission.
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Mini Click Hub -->
-            <div class="row portfolio-block d-flex justify-content-center align-items-center">
-                <div class="portfolio-description col-sm-12 col-md-8 d-flex justify-content-center row">
-                    <div>
-                        <div class="portfolio-title col-12">
-                            Remote Welder Controller
-                        </div>
-                        <div class="portfolio-text col-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est bore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex align-items-center">
-                    <button class="scroll-btn-right scroll-btn btn common-btn"><</button>
-                    <div class="portfolio-gallery d-flex align-items-center">
-                        <span class="image-container"><img src="WCV1/WC4.png" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC1.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC2.jpg" width="100%" height="100%"></span>
-                        <span class="image-container"><img src="WCV1/WC3.jpg" width="100%" height="100%"></span>
-                    </div>
-                    <button class="scroll-btn-left scroll-btn btn common-btn">></button>
-                </div>
-            </div>
+            
         </div>
         </div>
     </section>
